@@ -16,27 +16,28 @@ conclusión, van a correr en el orden que terminen el promise
 
 //metodo async de ejemplo 1
 const hacerClickAAlgo = async () => {
-  //declaro asíncronía para usara await
+  //declaro asíncronía para usar await
   //await del click mismo para que sí haga click, caso contrario no se concluye el promise
   await click; //aka await de nivel 1
 };
 
 //metodo async de ejemplo 2
 const verificarAlgo = async () => {
+  //declaro asíncronía para usar await
   //await del verificar mismo para que sí haga click, caso contrario no se concluye el promise
   await verificar; //aka await de nivel 1
 };
 
-//este es mi test
+//este es mi test que quiero que corra tal cual el orden que pongo
 const test = async () => {
   //await para que se ejecute en el orden que yo quiero sino se ejecuta ni bien termina el promise
   await hacerclick(); //aka await de nivel 2
   //await para que se ejecute en el orden que yo quiero sino se ejecuta ni bien termina el promise
   await verificarAlgo(); //aka await de nivel 2
-  console.log("final del test"); //no necesita await ya que NO es asíncrono
+  console.log("final del test"); //no necesita await ya que NO es asíncrono o sea es síncrono
 };
 
-//este es mi test malo
+//este es mi test malo, no le pongo async y await entonces no correrá en ese mismo orden
 const testMalo = () => {
   //el hacer click sí se va a ejecutar pero CUANDO SE TERMINE DE CUMPLIR EL PROMISE
   hacerclick();
