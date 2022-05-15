@@ -1,21 +1,18 @@
-import Persona from "./Persona.class.js";
+import { Persona } from "./Persona.class.js";
 
 class Ingeniero extends Persona {
   #cervezaFavorita = "pilsen";
 
   constructor(id, nombre, edad, codigoIngeniero, espIngenieria) {
     super(id, nombre, edad);
-    this.#codigoIngeniero = codigoIngeniero;
-    this.#espIngeniera = espIngenieria;
+    this.codigoIngeniero = codigoIngeniero;
+    this.espIngeniera = espIngenieria;
   }
 
   //getter
-  get codigoIngeniero() {
-    return this.#codigoIngeniero;
-  }
 
-  get espIngenieria() {
-    return this.#espIngeniera;
+  get cervezaFavorita() {
+    return this.#cervezaFavorita;
   }
 
   //métodos privados
@@ -29,8 +26,8 @@ class Ingeniero extends Persona {
 
   //métodos públicos
   calcularTodo(a, b) {
-    const suma = this.#calcularSuma();
-    const resta = this.#calcularResta();
+    const suma = this.#calcularSuma(a, b);
+    const resta = this.#calcularResta(a, b);
     console.log(`la suma es: ${suma} y la resta es: ${resta}`);
   }
 }
