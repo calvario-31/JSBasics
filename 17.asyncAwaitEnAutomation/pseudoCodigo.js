@@ -36,6 +36,18 @@ const test = async () => {
   console.log("final del test"); //no necesita await ya que NO es asíncrono
 };
 
+//este es mi test malo
+const testMalo = () => {
+  //el hacer click sí se va a ejecutar pero CUANDO SE TERMINE DE CUMPLIR EL PROMISE
+  hacerclick();
+  //el verificarAlgo sí se va a ejecutar pero CUANDO SE TERMINE DE CUMPLIR EL PROMISE
+  verificarAlgo();
+  console.log("final del test");
+  //en otras palabras NO va a terminar que se ejecute
+  //lo primero que se mostrará será el console.log ya que NO es asíncrono
+  //el hacer click y verificar se ejecutarán cuando termine el promise
+};
+
 const foo = async () => {
   await whereamI("portugal"); //para que se ejecute en el orden que deseo
   console.log("pipipippi"); //no es necesario await ya que no es asíncrono
