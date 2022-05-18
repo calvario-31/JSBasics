@@ -1,7 +1,7 @@
 "use strict";
 
-const a = Number(prompt("Ingrese un numero"));
-const b = Number(prompt("Ingrese otro numero"));
+const a = 10;
+const b = 5;
 
 const suma = a + b;
 const resta = a - b;

@@ -1,4 +1,4 @@
-import { Ingeniero } from "./Ingeniero.class.js";
+const { Ingeniero } = require("./Ingeniero.class");
 
 const ingeniero = new Ingeniero(60, "Carlos", 25, "2555FF", "INF");
 

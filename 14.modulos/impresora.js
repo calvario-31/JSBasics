@@ -1,2 +1,4 @@
-export const imprimirTexto = (text) => console.log(text);
-export const imprimirLinea = () => console.log("===========================");
+imprimirTexto = (text) => console.log(text);
+imprimirLinea = () => console.log("===========================");
+
+module.exports = { imprimirLinea, imprimirTexto };

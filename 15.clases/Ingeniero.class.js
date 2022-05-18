@@ -1,35 +1,35 @@
-import { Persona } from "./Persona.class.js";
+const { Persona } = require("./Persona.class");
 
 class Ingeniero extends Persona {
-  #cervezaFavorita = "pilsen";
+    #cervezaFavorita = "pilsen";
 
-  constructor(id, nombre, edad, codigoIngeniero, espIngenieria) {
-    super(id, nombre, edad);
-    this.codigoIngeniero = codigoIngeniero;
-    this.espIngeniera = espIngenieria;
-  }
+    constructor(id, nombre, edad, codigoIngeniero, espIngenieria) {
+        super(id, nombre, edad);
+        this.codigoIngeniero = codigoIngeniero;
+        this.espIngeniera = espIngenieria;
+    }
 
-  //getter
+    //getter
 
-  get cervezaFavorita() {
-    return this.#cervezaFavorita;
-  }
+    get cervezaFavorita() {
+        return this.#cervezaFavorita;
+    }
 
-  //métodos privados
-  #calcularSuma(a, b) {
-    return a + b;
-  }
+    //métodos privados
+    #calcularSuma(a, b) {
+        return a + b;
+    }
 
-  #calcularResta(a, b) {
-    return a - b;
-  }
+    #calcularResta(a, b) {
+        return a - b;
+    }
 
-  //métodos públicos
-  calcularTodo(a, b) {
-    const suma = this.#calcularSuma(a, b);
-    const resta = this.#calcularResta(a, b);
-    console.log(`la suma es: ${suma} y la resta es: ${resta}`);
-  }
+    //métodos públicos
+    calcularTodo(a, b) {
+        const suma = this.#calcularSuma(a, b);
+        const resta = this.#calcularResta(a, b);
+        console.log(`la suma es: ${suma} y la resta es: ${resta}`);
+    }
 }
 
-export { Ingeniero };
+module.exports = { Ingeniero };

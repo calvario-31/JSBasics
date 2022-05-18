@@ -15,7 +15,7 @@ console.log(palabra, typeof palabra);
 console.log(esHombre, typeof esHombre);
 
 const a = "10";
-const b = 5;
+const b = 6;
 
 const aNumber = Number(a);
 const bString = String(b);
