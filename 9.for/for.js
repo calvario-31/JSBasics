@@ -2,5 +2,5 @@
 
 //BUCLE FOR
 for (let i = 0; i < 5; i++) {
-  console.log(`el valor de i es: ${i}`);
+    console.log(`el valor de i es: ${i}`);
 }

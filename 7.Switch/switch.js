@@ -1,6 +1,6 @@
 "use strict";
 
-function ejercicio1() {
+const ejercicio1 = () => {
     //sin break
     const letra = "b";
 
@@ -14,7 +14,7 @@ function ejercicio1() {
         default:
             console.log("No me simpatizas");
     }
-}
+};
 
 const ejercicio2 = () => {
     //con break

@@ -1,0 +1,9 @@
+{
+    "producto": {
+        "nombre": "Aspiradora",
+        "precio": 35.25,
+        "tienda": "Saga",
+        "stock": 5,
+        "enOferta": false
+    }
+}

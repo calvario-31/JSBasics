@@ -1,0 +1,32 @@
+{
+    "productos": [
+        {
+            "nombre": "Aspiradora",
+            "precio": 123.25,
+            "tienda": "Saga",
+            "stock": 1,
+            "enOferta": false
+        },
+        {
+            "nombre": "Licuadora",
+            "precio": 111.22,
+            "tienda": "Ripley",
+            "stock": 3,
+            "enOferta": true
+        },
+        {
+            "nombre": "Cocina",
+            "precio": 777.45,
+            "tienda": "Cuaracao",
+            "stock": 3,
+            "enOferta": false
+        },
+        {
+            "nombre": "Refrigeradora",
+            "precio": 11.12,
+            "tienda": "Oxxo",
+            "stock": 8,
+            "enOferta": true
+        }
+    ]
+}
