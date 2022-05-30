@@ -1,6 +1,9 @@
 "use strict";
 
-//BUCLE FOR
-for (let i = 0; i < 5; i++) {
-    console.log(`el valor de i es: ${i}`);
-}
+const ejemploFor = (num) => {
+    for (let i = 0; i < num; i++) {
+        console.log(`el valor de i es: ${i}`);
+    }
+};
+
+ejemploFor(15);

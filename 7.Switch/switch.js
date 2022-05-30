@@ -1,9 +1,6 @@
 "use strict";
 
-const ejercicio1 = () => {
-    //sin break
-    const letra = "b";
-
+const ejemploSwitch = (letra) => {
     switch (letra) {
         case "a":
             console.log("Elegiste la letra a");
@@ -16,10 +13,8 @@ const ejercicio1 = () => {
     }
 };
 
-const ejercicio2 = () => {
+const ejemploSwitchBreak = (letra) => {
     //con break
-    const letra = "a";
-
     switch (letra) {
         case "a":
             console.log("Elegiste la letra a");
@@ -35,5 +30,5 @@ const ejercicio2 = () => {
     }
 };
 
-ejercicio1();
-//ejercicio2();
+ejemploSwitch("b");
+//ejemploSwitchBreak("a");
